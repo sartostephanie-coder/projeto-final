@@ -62,7 +62,7 @@ export default function NewPlaylistPage() {
   };
 
   // Função para deletar playlist
-  const handleDeletePlaylist = (id) => {
+  const handleDeletePlaylist = (id:any) => {
     const updated = playlists.filter((p) => p.id !== id);
     setPlaylists(updated);
     localStorage.setItem("playlists", JSON.stringify(updated));

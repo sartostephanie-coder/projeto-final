@@ -114,7 +114,7 @@ export default function Home() {
             onClick={() => {
               const tema = (document.getElementById("inputTema") as HTMLInputElement)
                 ?.value;
-              if (tema) router.push("/nova-playlist?tema=" + encodeURIComponent(tema));
+              if (tema) router.push("/list/new?tema=" + encodeURIComponent(tema));
             }}
           >
             💡 Gerar Tema
